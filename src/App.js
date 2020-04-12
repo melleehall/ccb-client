@@ -16,7 +16,7 @@ export default class App extends Component {
         <nav className='App__nav'>
           <Switch>
             <Route 
-                exact path='/signup' 
+                exact path='/' 
                 component={Nav}
             /> 
           </Switch>
@@ -25,7 +25,7 @@ export default class App extends Component {
           <main className='App__main'>
             <Switch>
               <Route 
-                exact path='/signup' 
+                exact path='/' 
                 component={SignupPathMain}
               />
               <Route component={NotFoundMain} />
