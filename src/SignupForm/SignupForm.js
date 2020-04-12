@@ -73,10 +73,10 @@ export default class AddFolder extends Component {
 
 
     render () {
-        const nameError = this.validateName();
-        const contentError = this.validateContent();
-        const folderError = this.validateFolder();
-        const fetchError = this.renderErrorMessage();
+        // const nameError = this.validateName();
+        // const contentError = this.validateContent();
+        // const folderError = this.validateFolder();
+        // const fetchError = this.renderErrorMessage();
 
         return (
             <section className='add_note_container'>
