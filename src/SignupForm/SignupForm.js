@@ -108,14 +108,14 @@ export default class AddFolder extends Component {
                                 <input type='text' name='new-note-name' id='new-note-name'
                                     onChange={e => this.updateName(e.target.value)}/>
                                 {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
+                                </fieldset>
+                                <fieldset class='address'>  
                                 <label htmlFor='new-note-name'>
                                     Street Number
                                 </label>
                                 <input type='text' name='new-note-name' id='new-note-name'
                                     onChange={e => this.updateName(e.target.value)}/>
                                 {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
-                            </fieldset>
-                            <fieldset class='address'>
                                 <label htmlFor='new-note-name'>
                                     Street Name
                                 </label>
