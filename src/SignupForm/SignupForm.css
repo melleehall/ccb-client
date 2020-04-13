@@ -22,7 +22,8 @@ h2 {
 .signup_options label,
 .personal_info input,
 .address input,
-.signup_options input {
+.signup_options input,
+.signup_options h3 {
     margin: 8px 0px;
     margin-left: auto;
     margin-right: auto;

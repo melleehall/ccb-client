@@ -136,6 +136,7 @@ export default class AddFolder extends Component {
                                 {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
                             </fieldset>
                             <fieldset className='signup_options'>
+                                <h3>Signup Options</h3>
                                 <div className='flex-row'>
                                     <label htmlFor='requestService'>
                                         Request Service
