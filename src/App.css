@@ -14,8 +14,12 @@ html,
     height: 100%;
 }
 
+.App_nav {
+    margin-top: 0px;
+}
+
 .Head__main {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: 100vh;

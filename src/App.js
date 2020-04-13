@@ -5,6 +5,7 @@ import './App.css'
 import Nav from './Nav/Nav'
 import SignupPathMain from './SignupPathMain/SignupPathMain';
 import NotFoundMain from './NotFoundMain/NotFoundMain';
+import Logo from './Logo/Logo';
 
 
 export default class App extends Component {
@@ -21,6 +22,9 @@ export default class App extends Component {
             /> 
           </Switch>
         </nav>
+        <header>
+          <Logo />
+        </header>
         <div className='Head__main'>
           <main className='App__main'>
             <Switch>

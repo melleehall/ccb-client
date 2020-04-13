@@ -79,29 +79,78 @@ export default class AddFolder extends Component {
         // const fetchError = this.renderErrorMessage();
 
         return (
-            <section className='add_note_container'>
-                <h2>Create a note</h2>
+            <section className='signup_form_container'>
+                <h2>Sign Up Today</h2>
                     <form className='add_note_form' onSubmit={e => this.handleSubmit(e)}>
-                        <div className='add_note_fields'>
-                            <label htmlFor='new-note-name'>
-                                First Name
-                            </label>
-                            <input type='text' name='new-note-name' id='new-note-name'
-                                onChange={e => this.updateName(e.target.value)}/>
-                            {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
-                            <label htmlFor='new-note-content'>
-                                Last Name
-                            </label>
-                            <input type='text' name='new-note-content' id='new-note-content'
-                                onChange={e => this.updateContent(e.target.value)}/>
-                            {/* {this.state.content.touched && <ValidationError message={contentError} />} */}
-                            <label htmlFor='folder-select'>
-                                Street Number
-                            </label>
-                            <select id='folder-select' name='folder-id'>
-                                
-                            </select>
-                            {/* {this.state.folderID.touched && <ValidationError message={folderError} />} */}
+                        <div className='signup_fields'>
+                            <fieldset className='personal_info'>
+                                <label htmlFor='new-note-name'>
+                                    First Name
+                                </label>
+                                <input type='text' name='new-note-name' id='new-note-name'
+                                    onChange={e => this.updateName(e.target.value)}/>
+                                {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
+                                <label htmlFor='new-note-content'>
+                                    Last Name
+                                </label>
+                                <input type='text' name='new-note-content' id='new-note-content'
+                                    onChange={e => this.updateContent(e.target.value)}/>
+                                {/* {this.state.content.touched && <ValidationError message={contentError} />} */}
+                                <label htmlFor='new-note-name'>
+                                    Email Address
+                                </label>
+                                <input type='text' name='new-note-name' id='new-note-name'
+                                    onChange={e => this.updateName(e.target.value)}/>
+                                {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
+                                <label htmlFor='new-note-name'>
+                                    Phone Number
+                                </label>
+                                <input type='text' name='new-note-name' id='new-note-name'
+                                    onChange={e => this.updateName(e.target.value)}/>
+                                {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
+                                <label htmlFor='new-note-name'>
+                                    Street Number
+                                </label>
+                                <input type='text' name='new-note-name' id='new-note-name'
+                                    onChange={e => this.updateName(e.target.value)}/>
+                                {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
+                            </fieldset>
+                            <fieldset class='address'>
+                                <label htmlFor='new-note-name'>
+                                    Street Name
+                                </label>
+                                <input type='text' name='new-note-name' id='new-note-name'
+                                    onChange={e => this.updateName(e.target.value)}/>
+                                {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
+                                <label htmlFor='new-note-name'>
+                                    City
+                                </label>
+                                <input type='text' name='new-note-name' id='new-note-name'
+                                    onChange={e => this.updateName(e.target.value)}/>
+                                {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
+                                <label htmlFor='new-note-name'>
+                                    Zipcode
+                                </label>
+                                <input type='text' name='new-note-name' id='new-note-name'
+                                    onChange={e => this.updateName(e.target.value)}/>
+                                {/* {this.state.name.touched && <ValidationError message={nameError} />} */}
+                            </fieldset>
+                            <fieldset className='signup_options'>
+                                <div className='flex-row'>
+                                    <label htmlFor='requestService'>
+                                        Request Service
+                                    </label>
+                                    <input type='checkbox' name='requestService' id='requestService'
+                                        onChange={e => this.updateName(e.target.value)}/>
+                                </div>
+                                <div className='flex-row'>
+                                    <label htmlFor='joinMailing'>
+                                        Subscribe to Mailing List
+                                    </label>
+                                    <input type='checkbox' name='joinMailing' id='joinMailing'
+                                        onChange={e => this.updateName(e.target.value)}/>
+                                </div>
+                            </fieldset>
                         </div>
                         <button 
                             type='submit' 
@@ -112,7 +161,7 @@ export default class AddFolder extends Component {
                                 this.validateFolder()
                             }
                         >
-                            Add Note
+                            SUBMIT
                         </button>
                         {/* {<ValidationError message={fetchError} />} */}
                     </form>

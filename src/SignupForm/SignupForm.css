@@ -1,0 +1,54 @@
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.signup_form_container {
+    background-color: #065549;
+    color: white;
+    margin: 15px;
+    padding: 15px;
+}
+
+.personal_info,
+.address,
+.signup_options {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal_info label,
+.address label,
+.signup_options label,
+.personal_info input,
+.address input,
+.signup_options input {
+    margin: 8px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.signup_options input {
+    width: 50px;
+}
+
+.submit_button {
+    font-size: 20px;
+    display: block;
+    margin: 30px auto 15px;
+    background-color: white;
+    color: black;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkbox {
+    size: 30px;
+}
